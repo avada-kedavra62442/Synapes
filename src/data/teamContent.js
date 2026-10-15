@@ -1,6 +1,6 @@
 export const teamStats = [
-  { number: "10", label: "STUDENTS", note: "One united crew", suffix: "+" },
-  { number: "02", label: "SCHOOLS", note: "One shared mission", suffix: "+" },
+  { number: "10", label: "STUDENTS", note: "One united crew", suffix: "" },
+  { number: "02", label: "SCHOOLS", note: "One shared mission", suffix: "" },
   { number: "08", label: "DWARKA · S-5", note: "CM Shri School", suffix: "" },
   { number: "02", label: "DWARKA · S-22", note: "CM Shri School", suffix: "" },
 ];
