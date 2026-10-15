@@ -1,9 +1,9 @@
 import { motion } from "framer-motion";
-import { ArrowUpRight, Boxes, Code2, Cog, ShieldCheck } from "lucide-react";
+import { ArrowUpRight, Boxes, Cog, FileText, Flag, ShieldCheck } from "lucide-react";
 import SectionLabel from "./SectionLabel.jsx";
 import { hyperdriveFocus } from "../data/teamContent.js";
 
-const icons = { mechanical: Cog, logic: Code2, iteration: Boxes };
+const icons = { mechanical: Cog, portfolio: FileText, strategy: Flag, iteration: Boxes };
 
 export default function HyperdriveSection() {
   return (
@@ -11,8 +11,8 @@ export default function HyperdriveSection() {
       <div className="hyperdrive-backdrop" aria-hidden="true"><span>H</span></div>
       <div className="section-wrap hyperdrive-inner">
         <div className="section-heading section-heading-light">
-          <div><SectionLabel number="02">THE CHALLENGE</SectionLabel><h2>WELCOME TO<br /><span>HYPERDRIVE.</span></h2></div>
-          <div className="challenge-copy"><p>HyperDrive is the 2026 game challenge for the National Robotics League (NRL). NRL brings students together to design and test robots, develop game strategy, compete on an arena, and learn through the engineering process. For SynApes, that means treating every design choice and every test as a chance to learn, adapt and work better together.</p><span className="challenge-mark">NRL <b>2026</b> <i>·</i> DELHI REGIONALS</span></div>
+          <div><SectionLabel number="04">THE 2026 GAME CHALLENGE</SectionLabel><h2>WELCOME TO<br /><span>HYPERDRIVE.</span></h2></div>
+          <div className="challenge-copy"><p>The National Robotics League (NRL) combines robot matches with skill challenges, team presentations and an engineering journey that starts long before competition day. HYPERDRIVE is the 2026 game challenge, built around the idea: “Engineering the future, one mission at a time.” SynApes is preparing to approach it through thoughtful design, clear documentation, match strategy and learning from every test.</p><span className="challenge-mark">NRL <b>2026</b> <i>·</i> DELHI REGIONALS</span></div>
         </div>
         <div className="focus-grid">
           {hyperdriveFocus.map((item, index) => {
@@ -23,7 +23,7 @@ export default function HyperdriveSection() {
             </motion.article>;
           })}
         </div>
-        <div className="challenge-foot"><span><ShieldCheck size={17} /> SAFETY. STRATEGY. TEAMWORK.</span><span>THE WORK IS THE ADVANTAGE <ArrowUpRight size={15} /></span></div>
+        <div className="challenge-foot"><span><ShieldCheck size={17} /> SAFETY. STRATEGY. TEAMWORK.</span><span>ENGINEER THE NEXT ATTEMPT <ArrowUpRight size={15} /></span></div>
       </div>
     </section>
   );
