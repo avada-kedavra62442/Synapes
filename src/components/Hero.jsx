@@ -14,14 +14,14 @@ export default function Hero() {
           BUILT TO<br /><span>THINK.</span> READY<br />TO <em>DRIVE.</em>
         </motion.h1>
         <motion.p className="hero-lede" initial={{ opacity: 0, y: 18 }} animate={{ opacity: 1, y: 0 }} transition={{ duration: .6, delay: .18 }}>
-          Ten students from two CM Shri Schools in Dwarka, working as one team for <strong>NRL 2026 HyperDrive</strong>. We bring curiosity to the workbench, turn questions into prototypes, and learn from every test.
+          Ten students from two CM Shri Schools in Dwarka, preparing for <strong>NRL 2026 HYPERDRIVE</strong>. We’re learning across mechanics, electronics and code—while building, documenting, testing and adapting as one team.
         </motion.p>
         <motion.div className="hero-actions" initial={{ opacity: 0, y: 14 }} animate={{ opacity: 1, y: 0 }} transition={{ duration: .5, delay: .28 }}>
           <a className="button button-primary" href="#team">MEET THE TEAM <ArrowDown size={16} /></a>
           <a className="button button-quiet" href="#hyperdrive">THE CHALLENGE <ArrowUpRight size={16} /></a>
         </motion.div>
         <div className="hero-micro">
-          <span><Cpu size={15} /> ENGINEERED TOGETHER</span>
+          <span><Cpu size={15} /> BUILD · DOCUMENT · IMPROVE</span>
           <span><Radio size={15} /> HYPERDRIVE / 2026</span>
         </div>
       </div>
@@ -30,7 +30,7 @@ export default function Hero() {
         <div className="visual-orbit orbit-one" /><div className="visual-orbit orbit-two" />
         <div className="visual-cross cross-a" /><div className="visual-cross cross-b" />
         <RobotIllustration />
-        <div className="visual-chip"><span className="chip-icon"><Gauge size={17} /></span><span><b>HYPERDRIVE</b><small>DESIGN · BUILD · LEARN</small></span></div>
+        <div className="visual-chip"><span className="chip-icon"><Gauge size={17} /></span><span><b>HYPERDRIVE</b><small>ENGINEERING THE FUTURE</small></span></div>
         <div className="visual-index">01 <span>/</span> 04</div>
       </motion.div>
       <a className="scroll-cue" href="#team"><span className="scroll-line" /> SCROLL TO EXPLORE</a>
