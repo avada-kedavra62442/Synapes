@@ -337,3 +337,31 @@ html{scroll-padding-top:108px}
 @media(max-width:900px){.site-nav{width:calc(100% - 48px)}main{padding-top:86px}.footer-main{gap:30px}}
 @media(max-width:680px){.site-nav{top:0;left:0;transform:none;width:100%;padding-inline:18px;height:72px;background:rgba(9,13,20,.95);border-bottom:1px solid rgba(176,195,215,.18)}main{padding-top:72px}html{scroll-padding-top:88px}#top,#team,#members,#hyperdrive,#story{scroll-margin-top:88px}.nav-links{top:71px;left:0;right:0}.footer-bottom{align-items:flex-start;flex-direction:column;gap:9px}.footer-main{padding-top:38px}}
 @media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}.site-nav{backdrop-filter:none;-webkit-backdrop-filter:none}}
+
+
+/* NRL framework layout: five signature skills + four HyperDrive workstreams */
+.values-grid{grid-template-columns:repeat(5,minmax(0,1fr));gap:12px}
+.value-card{min-width:0;padding:22px 18px 24px;min-height:285px}
+.value-card h3{font-size:clamp(19px,1.65vw,25px);overflow-wrap:anywhere}
+.value-eyebrow{min-height:30px;line-height:1.6}
+.value-description{font-size:11px;line-height:1.8}
+.focus-grid{grid-template-columns:repeat(4,minmax(0,1fr));gap:12px}
+.focus-card{padding:21px 19px 24px;min-width:0}
+.focus-top span{font-size:8px;line-height:1.6;max-width:calc(100% - 30px)}
+.focus-card h3{font-size:clamp(20px,1.7vw,27px);overflow-wrap:anywhere}
+.focus-card>p{font-size:11px;line-height:1.8}
+@media(max-width:1120px){
+  .values-grid{grid-template-columns:repeat(3,minmax(0,1fr))}
+  .focus-grid{grid-template-columns:repeat(2,minmax(0,1fr))}
+}
+@media(max-width:760px){
+  .values-grid{grid-template-columns:repeat(2,minmax(0,1fr))}
+  .value-card{min-height:250px;padding:21px 18px}
+  .focus-grid{grid-template-columns:repeat(2,minmax(0,1fr))}
+}
+@media(max-width:480px){
+  .values-grid,.focus-grid{grid-template-columns:1fr}
+  .value-card{min-height:0}
+  .value-eyebrow{min-height:0}
+  .focus-card{min-height:0}
+}
