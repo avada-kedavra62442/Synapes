@@ -8,7 +8,7 @@ export default function TeamMembersSection() {
     <section className="members-section section-wrap" id="members">
       <div className="section-heading members-heading">
         <div>
-          <SectionLabel number="04">THE PEOPLE BEHIND SYNAPES</SectionLabel>
+          <SectionLabel number="02">THE PEOPLE BEHIND SYNAPES</SectionLabel>
           <h2>MEET THE<br /><span>TEAM.</span></h2>
         </div>
         <p>Meet the 10 students behind SynApes. Each profile includes a name, class, school, photo and short introduction, so the people behind the engineering have a place on the team page.</p>
