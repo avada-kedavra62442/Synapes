@@ -1,14 +1,16 @@
-import { Activity, ArrowRight, Crosshair, Gauge } from "lucide-react";
+import { Activity, ArrowRight, ChartNoAxesCombined, Cog, FileText, RefreshCw, Users } from "lucide-react";
 
 const telemetry = [
-  { icon: Crosshair, label: "PRECISION IN EVERY DETAIL" },
-  { icon: Gauge, label: "BUILT TO KEEP LEARNING" },
-  { icon: Activity, label: "ONE TEAM · ONE MISSION" },
+  { icon: Cog, label: "TECHMECH · MECHANICS, ELECTRONICS & CODE" },
+  { icon: FileText, label: "BUILDERSHIP · DESIGN, BUILD & DOCUMENT" },
+  { icon: ChartNoAxesCombined, label: "DATACRAFT · LET THE TEST DATA TEACH" },
+  { icon: RefreshCw, label: "CTRLALTSHIFT · ADAPT WHEN PLANS CHANGE" },
+  { icon: Users, label: "RALLYX · TEAMWORK THAT MOVES US FORWARD" },
 ];
 
 export default function TelemetryStrip() {
   return (
-    <div className="telemetry-strip" aria-label="SynApes team principles">
+    <div className="telemetry-strip" aria-label="NRL's five signature skillsets">
       <div className="telemetry-track">
         {[0, 1].map((copy) => (
           <div className="telemetry-group" key={copy} aria-hidden={copy === 1}>
