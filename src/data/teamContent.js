@@ -10,26 +10,26 @@ export const engineeringPillars = [
     number: "01",
     title: "THINK AS ONE",
     eyebrow: "SHARED CURIOSITY",
-    text: "Good engineering starts with clear questions. We compare ideas, explain our reasoning and work through problems as a team.",
+    text: "Robotics brings mechanics, electronics, code and strategy together. We ask questions, compare ideas and make decisions as a team.",
   },
   {
     number: "02",
-    title: "BUILD WITH INTENT",
-    eyebrow: "PURPOSEFUL DESIGN",
-    text: "We aim to understand the job before choosing a solution. Design decisions, code and tests should each help us learn or improve.",
+    title: "BUILD. RECORD. LEARN.",
+    eyebrow: "ENGINEERING PROCESS",
+    text: "A robot is only part of the work. Design choices, wiring, code, tests and lessons learned all help tell the story of how a solution takes shape.",
   },
   {
     number: "03",
-    title: "DRIVE THE DETAIL",
-    eyebrow: "CONTINUOUS IMPROVEMENT",
-    text: "A test is useful even when it exposes a weakness. We record what we learn, adjust the details and try again with a clearer plan.",
+    title: "ADAPT WITH EVIDENCE",
+    eyebrow: "DATA & ITERATION",
+    text: "Every trial gives us information. We look for patterns, respond when something changes and use what we observe to plan the next improvement.",
   },
 ];
 
 export const hyperdriveFocus = [
-  { iconName: "mechanical", title: "MECHANICAL DESIGN", tag: "HARDWARE", text: "Explore mechanical choices, fit, movement and reliability as ideas become a physical robot." },
-  { iconName: "logic", title: "CONTROL & LOGIC", tag: "SOFTWARE", text: "Plan control logic carefully and test behavior so the robot responds as consistently as possible." },
-  { iconName: "iteration", title: "ITERATION", tag: "TESTING", text: "Use each trial to notice what worked, find what did not, and choose the next improvement." },
+  { iconName: "mechanical", title: "TECHMECH", tag: "MECHANICS · ELECTRONICS · CODE", text: "Connect the physical robot with its electronics and programming. Reliable performance begins when the whole system works together." },
+  { iconName: "logic", title: "BUILDERSHIP", tag: "DESIGN · DOCUMENTATION", text: "Move from an idea toward a working prototype, and make the reasoning visible through build notes, diagrams, code strategy and design decisions." },
+  { iconName: "iteration", title: "DATACRAFT & ADAPTATION", tag: "STRATEGY · ITERATION", text: "Observe test results, learn from match dynamics and refine the approach. Good teams can analyse, adapt and keep communicating under pressure." },
 ];
 
 export const teamIdentity = {
