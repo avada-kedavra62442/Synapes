@@ -1,4 +1,4 @@
-import { Activity, ArrowRight, ChartNoAxesCombined, Cog, FileText, RefreshCw, Users } from "lucide-react";
+import { ArrowRight, ChartNoAxesCombined, Cog, FileText, RefreshCw, Users } from "lucide-react";
 
 const telemetry = [
   { icon: Cog, label: "TECHMECH · MECHANICS, ELECTRONICS & CODE" },
