@@ -134,6 +134,7 @@ function HyperdriveArena() {
       </div>
       <div className="hd-arena-legend">
         <span><i className="legend-dot legend-red" /> RED SQUAD</span><span><i className="legend-dot legend-blue" /> BLUE SQUAD</span><span><i className="legend-dot legend-gold" /> GOLDEN CORE / STAR MAP</span>
+        <span className="hd-field-count">FIELD KIT · 6 HIGH POLES · 4 STAR POLES · 4 APEX POLES · 2 SPACE STATIONS</span>
       </div>
     </div>
   );
