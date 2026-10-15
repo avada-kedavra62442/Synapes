@@ -551,3 +551,7 @@ html{scroll-padding-top:108px}
 
 .hd-field-count{flex-basis:100%;text-align:center;padding-top:8px;color:#6f899d!important;font-size:7px!important;letter-spacing:.55px}
 @media(max-width:620px){.hd-field-count{text-align:left;line-height:1.8}}
+
+.hd-core-ring{transform-box:fill-box;transform-origin:center;animation:hd-core-float 3.2s ease-in-out infinite}
+@keyframes hd-core-float{0%,100%{translate:0 0}50%{translate:0 -3px}}
+@media(prefers-reduced-motion:reduce){.hd-core-ring{animation:none}}
