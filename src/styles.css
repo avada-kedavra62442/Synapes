@@ -248,3 +248,19 @@ body:before{z-index:0;background:radial-gradient(ellipse at 82% 8%,rgba(35,113,1
 @media(max-width:900px){.hero:after{right:-5px;bottom:30px}.stat-item:after{right:14px;bottom:-18px}}
 @media(max-width:680px){.hero:after{display:none}.hero-visual{box-shadow:inset 0 0 45px rgba(0,0,0,.18)}.hyperdrive-inner:before{top:26px}.manifesto-section:before{top:55px;right:2px}.stats-band{gap:0}.stat-item:after{bottom:-1px;right:12px}}
 @media(prefers-reduced-motion:reduce){.visual-orbit{animation:none!important}.nav-cta:before,.button-primary:before{display:none}}
+
+
+/* Animated telemetry ribbon */
+.telemetry-strip{height:54px;display:flex;align-items:center;overflow:hidden;border-top:1px solid rgba(153,179,201,.12);border-bottom:1px solid rgba(153,179,201,.12);background:linear-gradient(90deg,#0b1119,#111b27 50%,#0b1119);position:relative}
+.telemetry-strip:before,.telemetry-strip:after{content:"";position:absolute;z-index:2;top:0;bottom:0;width:80px;pointer-events:none}
+.telemetry-strip:before{left:0;background:linear-gradient(90deg,#0b1119,transparent)}
+.telemetry-strip:after{right:0;background:linear-gradient(270deg,#0b1119,transparent)}
+.telemetry-track{display:flex;width:max-content;animation:telemetry-scroll 34s linear infinite}
+.telemetry-strip:hover .telemetry-track{animation-play-state:paused}
+.telemetry-group{display:flex;align-items:center;flex-shrink:0}
+.telemetry-item{display:inline-flex;align-items:center;gap:13px;padding:0 35px;color:#9eafbf;font:9px var(--mono);letter-spacing:1.15px;white-space:nowrap}
+.telemetry-item>svg:first-child{color:var(--orange)}
+.telemetry-arrow{color:rgba(73,214,243,.7)}
+@keyframes telemetry-scroll{to{transform:translateX(-50%)}}
+@media(max-width:680px){.telemetry-strip{height:48px}.telemetry-item{padding-inline:23px;font-size:8px;gap:10px}.telemetry-strip:before,.telemetry-strip:after{width:25px}}
+@media(prefers-reduced-motion:reduce){.telemetry-track{animation:none!important}}
