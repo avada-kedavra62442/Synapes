@@ -12,10 +12,10 @@ export function TeamSections() {
       <TelemetryStrip />
       <TeamStats />
       <SchoolsSection />
+      <TeamMembersSection />
       <TeamValuesSection />
       <HyperdriveSection />
       <ManifestoSection />
-      <TeamMembersSection />
     </>
   );
 }
