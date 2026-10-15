@@ -43,14 +43,14 @@ function HyperdriveArena() {
     <div className="hd-arena glass-panel">
       <div className="hd-arena-header">
         <div>
-          <span className="hd-kicker"><ActivityDot /> OFFICIAL NRL FIELD / GAME MANUAL</span>
-          <h3>THE REAL HYPERDRIVE ARENA</h3>
+          <span className="hd-kicker"><ActivityDot /> OFFICIAL NRL FIELD / FIGURE 3.1</span>
+          <h3>THE ACTUAL HYPERDRIVE FIELD MAP</h3>
         </div>
         <span className="hd-field-size">12 FT × 12 FT</span>
       </div>
       <div className="hd-official-field-frame">
         <iframe
-          src="https://drive.google.com/file/d/1Huwjv3W1Nv4YadcgpQLIuMZ6EhevKLcF/preview#page=8"
+          src="https://drive.google.com/file/d/1Huwjv3W1Nv4YadcgpQLIuMZ6EhevKLcF/preview#page=9&zoom=page-fit"
           title="Official NRL 2026 HYPERDRIVE field diagram from the game manual"
           loading="lazy"
           allow="autoplay"
@@ -64,8 +64,7 @@ function HyperdriveArena() {
         <span className="hd-field-count">OFFICIAL FIELD · 6 HIGH POLES · 4 STAR POLES · 4 APEX POLES · 2 SPACE STATIONS · 2 VAULTS</span>
       </div>
       <p className="hd-official-field-note">
-        This is the field diagram from the official NRL 2026 HYPERDRIVE Game Manual—not a recreated or approximate field illustration.
-        The manual viewer is embedded from NRL’s official resource link.
+        Official field diagram (Fig. 3.1) from the NRL 2026 HYPERDRIVE Game Manual. This replaces the old illustrative map; the field layout is shown from NRL’s source document, not recreated.
       </p>
     </div>
   );
