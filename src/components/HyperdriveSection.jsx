@@ -41,6 +41,7 @@ const scoring = [
 function CoreRing({ x, y, color = "orange", delay = 0 }) {
   return (
     <motion.g
+      className="hd-core-ring"
       initial={{ opacity: 0, scale: 0.65 }}
       whileInView={{ opacity: 1, scale: 1 }}
       viewport={{ once: true }}
