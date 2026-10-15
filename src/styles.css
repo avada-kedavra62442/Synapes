@@ -548,3 +548,6 @@ html{scroll-padding-top:108px}
   .hd-phase-card,.hd-video,.hd-game-brief,.hd-arena,.hd-manual-link{transition:none}
   .hd-video:after,.hd-game-brief:after,.hd-arena:after,.hd-scoreboard:after,.hd-manual-link:after{display:none}
 }
+
+.hd-field-count{flex-basis:100%;text-align:center;padding-top:8px;color:#6f899d!important;font-size:7px!important;letter-spacing:.55px}
+@media(max-width:620px){.hd-field-count{text-align:left;line-height:1.8}}
