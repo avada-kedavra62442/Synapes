@@ -35,6 +35,7 @@ const scoring = [
   { label: "Golden CORE · Star Pole", points: "7", color: "gold" },
   { label: "Space Station · Engage / Dock / Balance", points: "3 / 8 / 15", color: "cyan" },
   { label: "Completed STAR MAP", points: "+10", color: "gold" },
+  { label: "Payload bonus · both squad robots score", points: "+10", color: "cyan" },
 ];
 
 function CoreRing({ x, y, color = "orange", delay = 0 }) {
@@ -151,7 +152,7 @@ export default function HyperdriveSection() {
         <div className="section-heading section-heading-light hd-main-heading">
           <div><SectionLabel number="04">THE GAME, EXPLAINED</SectionLabel><h2>THIS IS<br /><span>HYPERDRIVE.</span></h2><p className="hd-heading-sub">ENGINEERING THE FUTURE, ONE MISSION AT A TIME.</p></div>
           <div className="challenge-copy hd-intro">
-            <p>HYPERDRIVE is NRL’s 2026 robotics game. Two Squads—RED and BLUE—each made up of two teams, compete on a 12 ft × 12 ft field. Over a 2 minute 30 second match, robots collect ring-shaped COREs, score them on poles or in drop zones, unlock Golden COREs, and finish with a high-stakes endgame.</p>
+            <p>HYPERDRIVE is NRL’s 2026 robotics game. Two Squads—RED and BLUE—each made up of two teams, compete on a 12 ft × 12 ft field. Over a 2 minute 30 second match, robots collect ring-shaped COREs, score them on poles or in drop zones, unlock Golden COREs, and finish with a high-stakes endgame. The field starts with 23 squad-coloured COREs per side plus six Golden COREs locked in each squad’s VAULT.</p>
             <p>The game rewards more than speed: the best plan balances quick scoring, a randomized STAR MAP, a team-built PAYLOAD, and the final attempt to engage with or balance on a tilting SPACE STATION.</p>
             <span className="challenge-mark">OFFICIAL GAME MANUAL <b>2026</b> <i>·</i> HYPERDRIVE</span>
           </div>
