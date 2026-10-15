@@ -16,11 +16,11 @@ export default function Footer() {
             <span className="brand-mark"><span>S</span><i /></span>
             <span className="brand-word">SYN<span>APES</span></span>
           </a>
-          <p className="footer-tagline">Ten minds. One machine.<br /><strong>Infinite ways to solve.</strong></p>
+          <p className="footer-tagline">Ten students. Two schools.<br /><strong>One team learning by building.</strong></p>
           <span className="footer-event"><MapPin size={14} /> DWARKA, NEW DELHI <i /> NRL 2026</span>
         </div>
         <div className="footer-column">
-          <span className="footer-heading">EXPLORE</span>
+          <span className="footer-heading">EXPLORE SYNAPES</span>
           {footerLinks.map((link) => <a key={link.href} href={link.href}>{link.label}<ArrowUpRight size={13} /></a>)}
         </div>
         <div className="footer-callout">
@@ -30,9 +30,9 @@ export default function Footer() {
         </div>
       </div>
       <div className="footer-bottom section-wrap">
-        <span>© 2026 SYNAPES · BUILT BY THE TEAM</span>
+        <span>© 2026 SYNAPES · STUDENT ROBOTICS TEAM</span>
         <span>NRL 2026 <i>·</i> DELHI REGIONALS</span>
-        <span>MADE WITH CURIOSITY <Heart size={12} fill="currentColor" /></span>
+        <span>THINK · BUILD · TEST · LEARN <Heart size={12} fill="currentColor" /></span>
       </div>
     </footer>
   );
