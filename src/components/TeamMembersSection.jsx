@@ -11,7 +11,7 @@ export default function TeamMembersSection() {
           <SectionLabel number="04">THE PEOPLE BEHIND SYNAPES</SectionLabel>
           <h2>MEET THE<br /><span>TEAM.</span></h2>
         </div>
-        <p>Ten students. Ten individual stories. One shared build. Get to know the people bringing SynApes to life — in the workshop, in the code, and on competition day.</p>
+        <p>Meet the 10 students behind SynApes. Each profile includes a name, class, school, photo and short introduction, so the people behind the engineering have a place on the team page.</p>
       </div>
       <div className="members-grid">
         {teamMembers.map((member, index) => (
@@ -30,7 +30,7 @@ export default function TeamMembersSection() {
           </motion.article>
         ))}
       </div>
-      <p className="members-note">The profiles are ready for the team's real names, class details, introductions, and photographs.</p>
+      <p className="members-note">Member profiles will be most complete once the team adds each student's real name, class, introduction and photograph.</p>
     </section>
   );
 }
