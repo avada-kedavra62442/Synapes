@@ -202,3 +202,49 @@ body:before {
   .visual-orbit { animation: none !important; }
   .nav-cta:before, .button-primary:before { display: none; }
 }
+
+
+/* SYNAPES VISUAL PASS — depth, motion, and racing telemetry */
+:root{--orange-hot:#ff8054;--cyan-soft:#8beaff;--glass:rgba(16,25,37,.72);--glow-orange:0 0 34px rgba(243,108,61,.12)}
+html{scroll-padding-top:24px}
+body:before{z-index:0;background:radial-gradient(ellipse at 82% 8%,rgba(35,113,144,.19),transparent 34%),radial-gradient(ellipse at 3% 43%,rgba(243,108,61,.075),transparent 30%),radial-gradient(ellipse at 78% 78%,rgba(24,68,91,.13),transparent 36%)}
+#root{position:relative;isolation:isolate}
+#root:before{content:"";position:absolute;z-index:-1;inset:0;pointer-events:none;opacity:.2;background-image:radial-gradient(rgba(174,198,220,.5) .65px,transparent .65px);background-size:28px 28px;mask-image:linear-gradient(to bottom,transparent,black 13%,black 78%,transparent)}
+.site-nav{border-bottom-color:rgba(176,195,215,.21)}
+.brand-mark{box-shadow:inset 0 0 20px rgba(243,108,61,.07),0 0 22px rgba(243,108,61,.06)}
+.brand-word{text-shadow:0 0 28px rgba(236,245,255,.07)}
+.nav-cta{position:relative;overflow:hidden}
+.nav-cta:before,.button-primary:before{content:"";position:absolute;inset:0;background:linear-gradient(115deg,transparent 20%,rgba(255,255,255,.22) 48%,transparent 70%);transform:translateX(-130%);transition:transform .55s ease;pointer-events:none}
+.nav-cta:hover:before,.button-primary:hover:before{transform:translateX(130%)}
+.hero{isolation:isolate}
+.hero:after{content:"SYNAPES / NRL 2026";position:absolute;right:0;bottom:74px;color:rgba(143,165,187,.27);font:9px var(--mono);letter-spacing:2.3px;writing-mode:vertical-rl}
+.hero h1{text-shadow:0 12px 45px rgba(0,0,0,.25)}
+.hero h1>span{text-shadow:0 0 36px rgba(243,108,61,.13)}
+.hero h1 em{text-shadow:0 0 36px rgba(73,214,243,.13)}
+.eyebrow{color:#c4d0dc}
+.hero-visual{border-color:rgba(145,178,203,.21);background:linear-gradient(135deg,rgba(20,36,51,.65),rgba(7,13,21,.34) 55%),radial-gradient(ellipse at 50% 50%,rgba(42,99,125,.23),transparent 66%);box-shadow:inset 0 0 70px rgba(0,0,0,.22),0 28px 90px rgba(0,0,0,.12)}
+.hero-visual:after{content:"";position:absolute;inset:12px;border:1px solid rgba(143,167,190,.07);pointer-events:none}
+.visual-orbit{animation:orbit-drift 28s linear infinite}.orbit-two{animation-direction:reverse;animation-duration:35s}
+.visual-chip{border-color:rgba(135,162,185,.31);box-shadow:0 12px 38px rgba(0,0,0,.2)}
+.button{position:relative;overflow:hidden}.button-primary{box-shadow:0 8px 28px rgba(243,108,61,.15)}.button-primary:hover{box-shadow:0 12px 34px rgba(243,108,61,.24)}.button-quiet{background:rgba(255,255,255,.015)}
+.stats-band{position:relative;border-color:rgba(176,195,215,.2);background:linear-gradient(90deg,rgba(13,20,30,.97),rgba(14,23,34,.92),rgba(10,16,25,.97))}
+.stat-item{position:relative}.stat-number{letter-spacing:-1px}.stat-number span{text-shadow:0 0 22px rgba(243,108,61,.25)}
+.stat-item:after{content:"";position:absolute;left:0;right:22px;bottom:-29px;height:2px;transform:scaleX(0);transform-origin:left;background:var(--orange);transition:transform .35s ease}.stat-item:hover:after{transform:scaleX(1)}
+.team-section{position:relative}.section-heading h2{ text-wrap:balance}.section-heading>p,.challenge-copy>p{text-wrap:pretty}
+.school-card{box-shadow:inset 0 1px 0 rgba(255,255,255,.025),0 18px 60px rgba(0,0,0,.09)}
+.school-card:before{content:"";position:absolute;left:0;top:0;height:2px;width:72px;background:var(--orange);opacity:.85}.school-card-secondary:before{background:var(--cyan)}
+.school-card:hover{box-shadow:inset 0 1px 0 rgba(255,255,255,.035),var(--glow-orange)}
+.school-icon{box-shadow:inset 0 0 18px rgba(243,108,61,.06)}.school-count{letter-spacing:-2px}.school-bar{overflow:hidden}.school-bar span{box-shadow:0 0 15px rgba(243,108,61,.45)}.school-card-secondary .school-bar span{box-shadow:0 0 15px rgba(73,214,243,.4)}
+.team-note{backdrop-filter:blur(8px)}
+.hyperdrive-section{background:radial-gradient(ellipse at 100% 40%,rgba(40,83,108,.2),transparent 40%),linear-gradient(120deg,#101822,#0c131d 65%,#111b27)}
+.hyperdrive-inner{isolation:isolate}.hyperdrive-inner:before{content:"HD / 26";position:absolute;right:0;top:45px;font:10px var(--mono);letter-spacing:2px;color:rgba(133,157,179,.35)}
+.focus-card{backdrop-filter:blur(8px);box-shadow:inset 0 1px 0 rgba(255,255,255,.025)}
+.focus-card:before{content:"";position:absolute;inset:0;opacity:0;background:radial-gradient(ellipse at 100% 0%,rgba(73,214,243,.09),transparent 60%);transition:opacity .25s ease;pointer-events:none}.focus-card:hover:before{opacity:1}.focus-number{letter-spacing:-2px}
+.manifesto-section{isolation:isolate}.manifesto-section:before{content:"BUILD / TEST / LEARN / REPEAT";position:absolute;z-index:-1;right:0;top:120px;font:9px var(--mono);letter-spacing:2px;color:rgba(130,151,172,.2);writing-mode:vertical-rl}
+.manifesto-content h2{letter-spacing:-1px}.manifesto-stamp{box-shadow:0 0 40px rgba(243,108,61,.04)}.text-link{transition:gap .2s,color .2s}.text-link:hover{color:var(--orange-hot)}
+.site-footer{position:relative;overflow:hidden}.site-footer:before{content:"";position:absolute;top:0;left:0;width:100%;height:1px;background:linear-gradient(90deg,transparent,rgba(243,108,61,.65),rgba(73,214,243,.5),transparent)}
+.footer-github{background:rgba(255,255,255,.018)}.footer-bottom{border-top-color:rgba(176,195,215,.11)}
+@keyframes orbit-drift{from{rotate:0deg}to{rotate:360deg}}
+@media(max-width:900px){.hero:after{right:-5px;bottom:30px}.stat-item:after{right:14px;bottom:-18px}}
+@media(max-width:680px){.hero:after{display:none}.hero-visual{box-shadow:inset 0 0 45px rgba(0,0,0,.18)}.hyperdrive-inner:before{top:26px}.manifesto-section:before{top:55px;right:2px}.stats-band{gap:0}.stat-item:after{bottom:-1px;right:12px}}
+@media(prefers-reduced-motion:reduce){.visual-orbit{animation:none!important}.nav-cta:before,.button-primary:before{display:none}}
