@@ -10,7 +10,7 @@ export default function ManifestoSection() {
       </div>
       <div className="manifesto-content">
         <h2>WE DON'T WAIT<br />FOR <span>THE FUTURE.</span><br />WE BUILD IT.</h2>
-        <p>Every great run begins long before the starting signal. It begins with a sketch that might not work, a question nobody has answered yet, and a team willing to try again. That's the SynApes mindset.</p>
+        <p>Our work is more than the final run. It is the questions we ask before building, the care we put into each decision, and the willingness to revisit an idea when a test proves it needs work. SynApes is built around curiosity, honest iteration and a team that learns together.</p>
         <a className="text-link" href="#top">BACK TO THE START <ArrowUpRight size={17} /></a>
       </div>
       <div className="manifesto-bottom"><span>CURIOUS BY NATURE.</span><span>ENGINEERS BY PRACTICE.</span><span>SYNAPES BY CHOICE.</span></div>
