@@ -23,7 +23,7 @@ export default function TeamMembersSection() {
             <div className="member-details">
               <div className="member-meta"><span>{member.role}</span><span>{member.className}</span></div>
               <h3>{member.name}</h3>
-              <p className="member-school"><GraduationCap size={14} /> {member.school}</p>
+              <p className="member-school"><GraduationCap size={14} /> <span>{member.school}</span></p>
               <p className="member-about">{member.about}</p>
               <div className="member-card-bottom"><span>TEAM PROFILE</span><ArrowUpRight size={15} /></div>
             </div>
