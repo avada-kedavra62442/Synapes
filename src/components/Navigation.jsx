@@ -1,5 +1,5 @@
 import { useState } from "react";
-import { ArrowUpRight, Menu, X } from "lucide-react";
+import { ArrowDownRight, Menu, X } from "lucide-react";
 
 const links = [
   { label: "THE TEAM", href: "#team" },
@@ -20,8 +20,8 @@ export default function Navigation() {
         {links.map((link) => (
           <a key={link.href} href={link.href} onClick={() => setOpen(false)}>{link.label}</a>
         ))}
-        <a className="nav-cta" href="https://github.com/avada-kedavra62442/Synapes" target="_blank" rel="noreferrer">
-          FOLLOW THE BUILD <ArrowUpRight size={15} />
+        <a className="nav-cta" href="#hyperdrive" onClick={() => setOpen(false)}>
+          EXPLORE HYPERDRIVE <ArrowDownRight size={15} />
         </a>
       </nav>
       <button className="menu-toggle" onClick={() => setOpen(!open)} aria-label={open ? "Close menu" : "Open menu"} aria-expanded={open}>
