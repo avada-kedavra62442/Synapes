@@ -14,7 +14,7 @@ export default function Hero() {
           BUILT TO<br /><span>THINK.</span> READY<br />TO <em>DRIVE.</em>
         </motion.h1>
         <motion.p className="hero-lede" initial={{ opacity: 0, y: 18 }} animate={{ opacity: 1, y: 0 }} transition={{ duration: .6, delay: .18 }}>
-          Ten students. Two schools. One team that turns ideas into motion. Meet <strong>SynApes</strong> — ready to take on HyperDrive.
+          Ten students from two CM Shri Schools in Dwarka, working as one team for <strong>NRL 2026 HyperDrive</strong>. We bring curiosity to the workbench, turn questions into prototypes, and learn from every test.
         </motion.p>
         <motion.div className="hero-actions" initial={{ opacity: 0, y: 14 }} animate={{ opacity: 1, y: 0 }} transition={{ duration: .5, delay: .28 }}>
           <a className="button button-primary" href="#team">MEET THE TEAM <ArrowDown size={16} /></a>
@@ -26,11 +26,11 @@ export default function Hero() {
         </div>
       </div>
       <motion.div className="hero-visual" initial={{ opacity: 0, scale: .94, x: 18 }} animate={{ opacity: 1, scale: 1, x: 0 }} transition={{ duration: .8, delay: .15 }}>
-        <div className="visual-topline"><span>FIG. 001 — CONCEPT UNIT</span><span>SN-26 / HD</span></div>
+        <div className="visual-topline"><span>SYNAPES / ROBOTICS TEAM</span><span>SN-26 / HD</span></div>
         <div className="visual-orbit orbit-one" /><div className="visual-orbit orbit-two" />
         <div className="visual-cross cross-a" /><div className="visual-cross cross-b" />
         <RobotIllustration />
-        <div className="visual-chip"><span className="chip-icon"><Gauge size={17} /></span><span><b>HYPERDRIVE</b><small>DESIGN · BUILD · COMPETE</small></span></div>
+        <div className="visual-chip"><span className="chip-icon"><Gauge size={17} /></span><span><b>HYPERDRIVE</b><small>DESIGN · BUILD · LEARN</small></span></div>
         <div className="visual-index">01 <span>/</span> 04</div>
       </motion.div>
       <a className="scroll-cue" href="#team"><span className="scroll-line" /> SCROLL TO EXPLORE</a>
