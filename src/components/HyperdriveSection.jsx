@@ -12,7 +12,7 @@ export default function HyperdriveSection() {
       <div className="section-wrap hyperdrive-inner">
         <div className="section-heading section-heading-light">
           <div><SectionLabel number="02">THE CHALLENGE</SectionLabel><h2>WELCOME TO<br /><span>HYPERDRIVE.</span></h2></div>
-          <div className="challenge-copy"><p>Robotics is where imagination meets physics. HyperDrive pushes teams to think strategically, engineer deliberately and perform under pressure.</p><span className="challenge-mark">NRL <b>2026</b> <i>·</i> DELHI REGIONALS</span></div>
+          <div className="challenge-copy"><p>HyperDrive is our robotics challenge for NRL 2026. For SynApes, preparation means breaking a big challenge into smaller engineering decisions: understand the task, design thoughtfully, test what we build, and improve from what the results tell us.</p><span className="challenge-mark">NRL <b>2026</b> <i>·</i> DELHI REGIONALS</span></div>
         </div>
         <div className="focus-grid">
           {hyperdriveFocus.map((item, index) => {
