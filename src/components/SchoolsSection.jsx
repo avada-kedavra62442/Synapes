@@ -3,8 +3,8 @@ import { GraduationCap, Sparkles } from "lucide-react";
 import SectionLabel from "./SectionLabel.jsx";
 
 const schools = [
-  { index: "TEAM BASE / 01", count: "08", location: "DWARKA · SECTOR 5", width: "80%", tone: "main", description: "Eight teammates bringing ideas, energy and hands-on problem solving to the build." },
-  { index: "TEAM BASE / 02", count: "02", location: "DWARKA · SECTOR 22", width: "20%", tone: "secondary", description: "Two teammates adding another perspective to one collaborative engineering effort." },
+  { index: "TEAM BASE / 01", count: "08", location: "DWARKA · SECTOR 5", width: "80%", tone: "main", description: "Eight students from Sector 5 contributing ideas, testing approaches and learning through a shared robotics build." },
+  { index: "TEAM BASE / 02", count: "02", location: "DWARKA · SECTOR 22", width: "20%", tone: "secondary", description: "Two students from Sector 22 bringing their perspective to the same team goal: learn together and build better." },
 ];
 
 export default function SchoolsSection() {
@@ -12,7 +12,7 @@ export default function SchoolsSection() {
     <section className="team-section section-wrap" id="team">
       <div className="section-heading">
         <div><SectionLabel number="01">THE PEOPLE BEHIND THE MACHINE</SectionLabel><h2>ONE TEAM.<br /><span>DIFFERENT MINDS.</span></h2></div>
-        <p>SynApes brings together students from two CM Shri Schools in Dwarka. Different perspectives, shared curiosity, and a common goal: make the machine — and the team — better every day.</p>
+        <p>SynApes brings together 10 students from CM Shri School, Dwarka Sector 5 and CM Shri School, Dwarka Sector 22. Our school communities are different; our project, preparation and responsibility are shared.</p>
       </div>
       <div className="school-grid">
         {schools.map((school) => (
@@ -25,7 +25,7 @@ export default function SchoolsSection() {
           </motion.article>
         ))}
       </div>
-      <div className="team-note"><Sparkles size={18} /><p><strong>Not just ten students.</strong> Ten perspectives learning to move in the same direction.</p></div>
+      <div className="team-note"><Sparkles size={18} /><p><strong>Two school communities. One crew.</strong> We share ideas, divide responsibilities, and bring our work together as SynApes.</p></div>
     </section>
   );
 }
