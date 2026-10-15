@@ -1,0 +1,12 @@
+export const teamMembers = [
+  { id: "01", name: "Member 01", className: "Class to be added", school: "CM Shri School · Dwarka Sector 5", role: "Team member", about: "Add a short introduction about this member, their interests, and what they contribute to SynApes.", photo: "" },
+  { id: "02", name: "Member 02", className: "Class to be added", school: "CM Shri School · Dwarka Sector 5", role: "Team member", about: "Add a short introduction about this member, their interests, and what they contribute to SynApes.", photo: "" },
+  { id: "03", name: "Member 03", className: "Class to be added", school: "CM Shri School · Dwarka Sector 5", role: "Team member", about: "Add a short introduction about this member, their interests, and what they contribute to SynApes.", photo: "" },
+  { id: "04", name: "Member 04", className: "Class to be added", school: "CM Shri School · Dwarka Sector 5", role: "Team member", about: "Add a short introduction about this member, their interests, and what they contribute to SynApes.", photo: "" },
+  { id: "05", name: "Member 05", className: "Class to be added", school: "CM Shri School · Dwarka Sector 5", role: "Team member", about: "Add a short introduction about this member, their interests, and what they contribute to SynApes.", photo: "" },
+  { id: "06", name: "Member 06", className: "Class to be added", school: "CM Shri School · Dwarka Sector 5", role: "Team member", about: "Add a short introduction about this member, their interests, and what they contribute to SynApes.", photo: "" },
+  { id: "07", name: "Member 07", className: "Class to be added", school: "CM Shri School · Dwarka Sector 5", role: "Team member", about: "Add a short introduction about this member, their interests, and what they contribute to SynApes.", photo: "" },
+  { id: "08", name: "Member 08", className: "Class to be added", school: "CM Shri School · Dwarka Sector 5", role: "Team member", about: "Add a short introduction about this member, their interests, and what they contribute to SynApes.", photo: "" },
+  { id: "09", name: "Member 09", className: "Class to be added", school: "CM Shri School · Dwarka Sector 22", role: "Team member", about: "Add a short introduction about this member, their interests, and what they contribute to SynApes.", photo: "" },
+  { id: "10", name: "Member 10", className: "Class to be added", school: "CM Shri School · Dwarka Sector 22", role: "Team member", about: "Add a short introduction about this member, their interests, and what they contribute to SynApes.", photo: "" },
+];
