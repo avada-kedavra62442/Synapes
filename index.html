@@ -1,134 +1,21 @@
 <!doctype html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <meta name="theme-color" content="#080d16" />
-  <meta name="description" content="SynApes — a ten-student robotics team representing CM Shri Schools Dwarka at NRL 2026 Delhi Regionals, competing in HyperDrive." />
-  <title>SynApes — NRL HyperDrive 2026</title>
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@500;600;700;800;900&family=DM+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
-  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Crect width='100' height='100' rx='22' fill='%23080d16'/%3E%3Cpath d='M19 25h62L61 44h20L34 78l10-25H24l17-17H19z' fill='%23ff6b35'/%3E%3C/svg%3E">
-  <style>
-    :root{color-scheme:dark;--bg:#080d16;--panel:#101925;--panel2:#131f2d;--line:rgba(205,220,240,.12);--text:#f3f6fb;--muted:#9caabd;--orange:#ff6b35;--cyan:#55d9f5;--blue:#3378ff;--max:1180px}
-    *{box-sizing:border-box}html{scroll-behavior:smooth;scroll-padding-top:90px}body{margin:0;background:var(--bg);color:var(--text);font-family:'DM Sans',sans-serif;line-height:1.6;overflow-x:hidden}body:before{content:"";position:fixed;inset:0;pointer-events:none;z-index:-1;background:radial-gradient(ellipse at 76% 10%,rgba(35,101,173,.17),transparent 38%),radial-gradient(ellipse at 12% 44%,rgba(255,107,53,.07),transparent 35%),linear-gradient(rgba(255,255,255,.018) 1px,transparent 1px),linear-gradient(90deg,rgba(255,255,255,.018) 1px,transparent 1px);background-size:auto,auto,46px 46px,46px 46px}
-    a{color:inherit;text-decoration:none}button{font:inherit}.wrap{width:min(var(--max),calc(100% - 44px));margin:auto}.topbar{position:sticky;top:0;z-index:20;border-bottom:1px solid var(--line);background:rgba(8,13,22,.84);backdrop-filter:blur(18px)}.nav{height:76px;display:flex;align-items:center;justify-content:space-between;gap:24px}.brand{display:flex;align-items:center;gap:12px;font-weight:800;letter-spacing:-.04em;font-size:1.22rem}.brand-mark{width:40px;height:40px;display:grid;place-items:center;background:linear-gradient(145deg,#ff8c50,#f04b26);border-radius:12px;box-shadow:0 6px 24px #ff6b3530}.brand-mark svg{width:25px}.brand em{font-style:normal;color:var(--orange)}.navlinks{display:flex;align-items:center;gap:30px;color:#c0c9d6;font-size:.9rem}.navlinks a:hover{color:white}.nav-cta,.button{display:inline-flex;align-items:center;justify-content:center;gap:10px;border:1px solid transparent;border-radius:9px;padding:12px 17px;font-weight:700;font-size:.9rem;transition:transform .2s,border-color .2s,background .2s}.nav-cta,.button-primary{background:var(--orange);color:#151018;box-shadow:0 8px 26px #ff6b3524}.nav-cta:hover,.button:hover{transform:translateY(-2px)}.button-ghost{border-color:var(--line);background:#ffffff06;color:var(--text)}.button-ghost:hover{border-color:#ffffff42;background:#ffffff0b}.menu-btn{display:none;background:none;color:white;border:1px solid var(--line);border-radius:8px;padding:8px 10px}
-    .hero{position:relative;padding:86px 0 76px;min-height:650px;display:flex;align-items:center}.hero-grid{display:grid;grid-template-columns:1.02fr .98fr;gap:42px;align-items:center}.eyebrow{display:inline-flex;align-items:center;gap:9px;text-transform:uppercase;letter-spacing:.16em;font-size:.72rem;font-weight:800;color:#c7d2e1}.pulse{width:8px;height:8px;background:var(--orange);border-radius:50%;box-shadow:0 0 0 5px #ff6b351c}.hero h1{font-family:'Barlow Condensed',sans-serif;font-size:clamp(4.5rem,8vw,7.8rem);line-height:.83;letter-spacing:-.045em;text-transform:uppercase;margin:25px 0 24px;font-weight:900}.hero h1 span{display:block;color:var(--orange)}.hero h1 .outline{color:transparent;-webkit-text-stroke:1px #aab8cb}.hero-copy{max-width:510px;color:#aab6c7;font-size:1.04rem;line-height:1.85}.hero-actions{display:flex;gap:12px;flex-wrap:wrap;margin-top:29px}.hero-meta{display:flex;align-items:center;gap:22px;margin-top:34px;color:#8f9caf;font-size:.8rem}.hero-meta strong{color:#eaf0f8;font-size:1rem;display:block}.meta-divider{width:1px;height:32px;background:var(--line)}
-    .visual{min-height:455px;position:relative;display:grid;place-items:center;isolation:isolate}.orbit{position:absolute;width:min(100%,480px);aspect-ratio:1;border-radius:50%;border:1px solid #5b7da12e;background:radial-gradient(circle at 50% 50%,#14273a 0,#0b1420 53%,transparent 70%);z-index:-2}.orbit:before,.orbit:after{content:"";position:absolute;inset:8%;border:1px dashed #7995b12e;border-radius:50%;transform:rotate(-22deg) scaleY(.74)}.orbit:after{inset:19%;transform:rotate(38deg) scaleY(.75)}.visual-glow{position:absolute;width:230px;height:230px;background:#ff6b3528;filter:blur(70px);border-radius:50%;right:15%;top:28%;z-index:-1}.robot-art{width:min(100%,480px);filter:drop-shadow(0 28px 45px #0009);animation:float 6s ease-in-out infinite}.hud{position:absolute;padding:13px 16px;background:#101b29dd;border:1px solid #b6cde026;border-radius:12px;backdrop-filter:blur(14px);box-shadow:0 18px 50px #0005}.hud small{display:block;color:#899bb0;font-size:.65rem;letter-spacing:.13em;text-transform:uppercase}.hud strong{font-family:'Barlow Condensed';font-size:1.3rem;letter-spacing:.04em}.hud-one{left:0;top:18%}.hud-two{right:0;bottom:18%}.hud .orange{color:var(--orange)}.hud .cyan{color:var(--cyan)}.hero-tag{position:absolute;bottom:3%;left:11%;font-family:'Barlow Condensed';font-size:.75rem;letter-spacing:.22em;color:#71859b;transform:rotate(-8deg)}
-    .ticker{border-block:1px solid var(--line);background:#0d1520;overflow:hidden}.ticker-track{display:flex;gap:30px;align-items:center;white-space:nowrap;padding:17px 0;color:#b9c5d5;font-family:'Barlow Condensed';font-size:1rem;font-weight:700;letter-spacing:.15em;text-transform:uppercase}.ticker-track span{display:flex;align-items:center;gap:30px}.ticker i{font-style:normal;color:var(--orange);font-size:1.1rem}
-    section{padding:100px 0}.section-head{display:flex;justify-content:space-between;align-items:end;gap:30px;margin-bottom:38px}.kicker{color:var(--orange);font-size:.72rem;font-weight:800;letter-spacing:.18em;text-transform:uppercase}.section-head h2,.story h2{font-family:'Barlow Condensed';font-size:clamp(2.7rem,5vw,4.4rem);line-height:.95;letter-spacing:-.02em;text-transform:uppercase;margin:12px 0 0}.section-head p{max-width:430px;color:var(--muted);margin:0;font-size:.94rem}.stat-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:16px}.stat-card{position:relative;padding:28px;border:1px solid var(--line);border-radius:15px;background:linear-gradient(145deg,#131f2d,#0d1520);overflow:hidden}.stat-card:after{content:"";position:absolute;width:130px;height:130px;right:-50px;top:-50px;border:1px solid #ffffff0b;border-radius:50%;box-shadow:0 0 0 18px #ffffff03,0 0 0 38px #ffffff02}.stat-number{font-family:'Barlow Condensed';font-size:3.6rem;font-weight:800;line-height:1;color:var(--orange)}.stat-label{margin-top:12px;font-weight:700}.stat-detail{color:var(--muted);font-size:.85rem;margin-top:6px}
-    .feature-grid{display:grid;grid-template-columns:1.1fr .9fr;gap:18px}.feature-main,.feature-side{border:1px solid var(--line);border-radius:18px;background:linear-gradient(145deg,#121e2c,#0c131e);overflow:hidden}.feature-main{padding:34px;min-height:355px;position:relative}.feature-main h3,.feature-side h3{font-family:'Barlow Condensed';font-size:2.1rem;text-transform:uppercase;margin:18px 0 10px;line-height:1}.feature-main p,.feature-side p{color:var(--muted);font-size:.9rem;max-width:460px}.feature-icon{width:46px;height:46px;display:grid;place-items:center;border-radius:12px;color:var(--orange);background:#ff6b3517;border:1px solid #ff6b3533}.feature-icon svg{width:25px;height:25px}.track-art{position:absolute;right:-7px;bottom:-20px;width:58%;opacity:.8}.feature-stack{display:grid;gap:18px}.feature-side{padding:25px;display:flex;gap:17px;align-items:flex-start}.feature-side h3{font-size:1.55rem;margin:3px 0 7px}.feature-side p{margin:0}
-    .schools{background:linear-gradient(180deg,transparent,#0d1520 25%,#0d1520 75%,transparent)}.school-grid{display:grid;grid-template-columns:1fr 1fr;gap:18px}.school-card{border:1px solid var(--line);border-radius:16px;padding:28px;background:#111b28;display:flex;gap:18px;align-items:center}.school-count{font-family:'Barlow Condensed';font-size:3.3rem;font-weight:800;line-height:1;color:var(--cyan);min-width:62px}.school-card:nth-child(2) .school-count{color:var(--orange)}.school-card h3{font-size:1.05rem;margin:0 0 5px}.school-card p{margin:0;color:var(--muted);font-size:.86rem}.school-note{color:#7f8fa3;font-size:.8rem;margin-top:22px}
-    .manifesto{padding:80px 0}.manifesto-box{border:1px solid #ff6b3538;border-radius:20px;padding:clamp(28px,5vw,60px);background:radial-gradient(ellipse at 100% 0%,#ff6b3512,transparent 45%),linear-gradient(120deg,#141e2a,#0d141f);display:flex;align-items:center;justify-content:space-between;gap:28px}.manifesto h2{font-family:'Barlow Condensed';font-size:clamp(2.8rem,5vw,4.5rem);text-transform:uppercase;line-height:.94;margin:12px 0}.manifesto p{color:var(--muted);max-width:570px;margin-bottom:0}.manifesto-mark{font-family:'Barlow Condensed';font-size:clamp(5rem,12vw,10rem);font-weight:900;line-height:1;color:#ff6b351b;-webkit-text-stroke:1px #ff6b3550}
-    footer{border-top:1px solid var(--line);padding:28px 0 35px}.footer-row{display:flex;align-items:center;justify-content:space-between;gap:20px}.footer-brand{display:flex;align-items:center;gap:10px;font-weight:800}.footer-brand .brand-mark{width:32px;height:32px;border-radius:9px}.footer-brand .brand-mark svg{width:20px}.footer-note{color:#7e8ca0;font-size:.8rem}.footer-links{display:flex;gap:20px;color:#aab6c7;font-size:.83rem}.footer-links a:hover{color:var(--orange)}
-    .reveal{opacity:0;transform:translateY(18px);transition:opacity .65s ease,transform .65s ease}.reveal.visible{opacity:1;transform:translateY(0)}@keyframes float{0%,100%{transform:translateY(0) rotate(-1deg)}50%{transform:translateY(-12px) rotate(1deg)}}@media(prefers-reduced-motion:reduce){*,*:before,*:after{scroll-behavior:auto!important;animation:none!important;transition:none!important}.reveal{opacity:1;transform:none}}
-    @media(max-width:850px){.hero{padding:65px 0 55px}.hero-grid{grid-template-columns:1fr;gap:15px}.hero-copy{max-width:620px}.visual{min-height:380px}.robot-art{max-width:400px}.hero h1{font-size:clamp(4.6rem,15vw,7rem)}.feature-grid{grid-template-columns:1fr}.feature-main{min-height:320px}.navlinks{gap:18px}.section-head{align-items:start;flex-direction:column}.manifesto-mark{display:none}}
-    @media(max-width:620px){.wrap{width:min(100% - 30px,var(--max))}.nav{height:66px}.menu-btn{display:block}.nav-cta{display:none}.navlinks{display:none;position:absolute;left:15px;right:15px;top:72px;padding:17px;background:#101925;border:1px solid var(--line);border-radius:13px;flex-direction:column;align-items:stretch;gap:0;box-shadow:0 20px 40px #0008}.navlinks.open{display:flex}.navlinks a{padding:12px 8px}.hero{padding-top:55px}.hero-meta{gap:13px}.visual{min-height:315px}.hud{padding:10px 12px}.hud-one{left:0;top:12%}.hud-two{right:0;bottom:10%}.hero-tag{left:4%;bottom:0}.stat-grid{grid-template-columns:1fr;gap:12px}.stat-card{padding:23px}.stat-number{font-size:3rem}section{padding:72px 0}.school-grid{grid-template-columns:1fr}.school-card{padding:23px}.feature-main{padding:25px;min-height:340px}.track-art{width:80%;opacity:.62}.manifesto{padding:48px 0}.manifesto-box{padding:28px}.footer-row{align-items:flex-start;flex-direction:column}.footer-links{flex-wrap:wrap;gap:15px}.footer-note{order:3}}
-  </style>
-</head>
-<body>
-<header class="topbar">
-  <div class="wrap nav">
-    <a class="brand" href="#home" aria-label="SynApes home"><span class="brand-mark"><svg viewBox="0 0 32 32" fill="none" aria-hidden="true"><path d="M5 5h22L19 13h8L9 28l4-10H7l7-7H5z" fill="#111723"/></svg></span><span>Syn<em>Apes</em></span></a>
-    <nav class="navlinks" id="navlinks" aria-label="Main navigation"><a href="#about">The team</a><a href="#hyperdrive">HyperDrive</a><a href="#schools">Our schools</a></nav>
-    <a class="nav-cta" href="#hyperdrive">Meet the mission <span aria-hidden="true">↗</span></a>
-    <button class="menu-btn" id="menuBtn" aria-label="Toggle navigation" aria-expanded="false">☰</button>
-  </div>
-</header>
-<main>
-  <section class="hero" id="home">
-    <div class="wrap hero-grid">
-      <div>
-        <div class="eyebrow"><span class="pulse"></span> NRL 2026 · Delhi Regionals · HyperDrive</div>
-        <h1>Built to<br><span>think.</span><span class="outline">Ready to</span><span>drive.</span></h1>
-        <p class="hero-copy">Ten students. Two school communities. One shared mission: engineer, iterate, and bring our best to the HyperDrive arena. Meet <strong>SynApes</strong>.</p>
-        <div class="hero-actions"><a class="button button-primary" href="#about">Get to know us <span aria-hidden="true">↗</span></a><a class="button button-ghost" href="#hyperdrive">Explore HyperDrive <span aria-hidden="true">↓</span></a></div>
-        <div class="hero-meta"><div><strong>10</strong> student team</div><span class="meta-divider"></span><div><strong>02</strong> school communities</div><span class="meta-divider"></span><div><strong>2026</strong> Delhi Regionals</div></div>
-      </div>
-      <div class="visual" aria-label="Abstract illustration of a high-performance competition robot">
-        <div class="orbit"></div><div class="visual-glow"></div>
-        <div class="hud hud-one"><small>Team status</small><strong class="orange">MISSION: ON</strong></div>
-        <div class="hud hud-two"><small>Operating mode</small><strong class="cyan">HYPERDRIVE_26</strong></div>
-        <svg class="robot-art" viewBox="0 0 520 490" role="img" aria-label="Stylized futuristic robot with orange and blue details">
-          <defs><linearGradient id="metal" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#dbe5f0"/><stop offset=".25" stop-color="#62758c"/><stop offset=".55" stop-color="#26374a"/><stop offset=".8" stop-color="#9aadc0"/><stop offset="1" stop-color="#33465b"/></linearGradient><linearGradient id="darkmetal" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#26394e"/><stop offset="1" stop-color="#0a111c"/></linearGradient><linearGradient id="orange" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#ffb06c"/><stop offset="1" stop-color="#f04422"/></linearGradient><linearGradient id="blue" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#82efff"/><stop offset="1" stop-color="#2688d7"/></linearGradient><filter id="shadow"><feGaussianBlur stdDeviation="9"/></filter></defs>
-          <ellipse cx="264" cy="427" rx="153" ry="22" fill="#000" opacity=".55" filter="url(#shadow)"/>
-          <g stroke="#0a111a" stroke-width="8" stroke-linejoin="round">
-            <path d="M171 283 133 335l20 62 53 6 21-55-20-61z" fill="url(#darkmetal)"/><path d="m336 283 42 52-18 61-53 9-21-57 20-63z" fill="url(#darkmetal)"/>
-            <path d="m143 365-23 26 12 27 69 5 11-26-19-25z" fill="url(#metal)"/><path d="m362 365 23 26-12 27-69 5-11-26 19-25z" fill="url(#metal)"/>
-            <path d="m190 205 140 0 40 83-40 86-142 0-39-86z" fill="url(#metal)"/>
-            <path d="m189 215 71 21 70-21 27 69-29 58-137 0-28-58z" fill="url(#darkmetal)"/>
-            <path d="m202 242 58 16 58-16 17 39-19 39H204l-19-39z" fill="#17283a" stroke="#4a627b" stroke-width="5"/>
-            <path d="m215 269 45 12 45-12-8 28h-74z" fill="url(#orange)" stroke="#ff9b61" stroke-width="3"/>
-            <path d="m213 330 47 10 47-10-12 31h-70z" fill="url(#blue)" stroke="#78eaff" stroke-width="3"/>
-            <path d="m194 204-8-51 29-35h91l29 35-8 51-31 21h-71z" fill="url(#metal)"/>
-            <path d="m205 160 17-23h76l17 23-8 35-24 14h-46l-24-14z" fill="url(#darkmetal)" stroke="#111d2a" stroke-width="6"/>
-            <path d="m218 169 28 0 0 17-28 0z" fill="url(#blue)" stroke="#3ebcdb" stroke-width="3"/><path d="m274 169 28 0 0 17-28 0z" fill="url(#blue)" stroke="#3ebcdb" stroke-width="3"/>
-            <path d="m248 193 12 8 12-8" fill="none" stroke="#ff7845" stroke-width="5"/>
-            <path d="m214 115-12-23 18-24 40-12 40 12 18 24-12 23-31 11h-30z" fill="url(#darkmetal)"/>
-            <path d="m226 89 34-10 34 10-7 21h-54z" fill="url(#orange)" stroke="#ff9b61" stroke-width="3"/>
-            <path d="m185 226-49-17-22 25 18 61 34 17 23-37z" fill="url(#metal)"/><path d="m335 226 49-17 22 25-18 61-34 17-23-37z" fill="url(#metal)"/>
-            <path d="m135 231-22 3-9 31 15 31 22-2 13-25z" fill="url(#orange)" stroke="#121b26" stroke-width="6"/><path d="m385 231 22 3 9 31-15 31-22-2-13-25z" fill="url(#orange)" stroke="#121b26" stroke-width="6"/>
-            <path d="m190 286-20 33 13 31 28-3 13-35z" fill="url(#metal)"/><path d="m330 286 20 33-13 31-28-3-13-35z" fill="url(#metal)"/>
-            <path d="m181 370 79 14 79-14-10 33-69 18-69-18z" fill="url(#darkmetal)"/>
-            <path d="m213 393 47 11 47-11-7 18-40 12-40-12z" fill="url(#orange)" stroke="#121b26" stroke-width="5"/>
-          </g>
-          <g fill="#e5f1ff" opacity=".6"><path d="m174 292 14 14-7 19-13-18z"/><path d="m346 292-14 14 7 19 13-18z"/><path d="m209 218 18 6-8 10-15-6z"/></g>
-          <path d="M92 346h57M374 346h55M260 45v25M78 160l27 13M441 160l-27 13" stroke="#5bdcf5" stroke-width="2" opacity=".55" stroke-linecap="round"/>
-          <circle cx="92" cy="346" r="4" fill="#5bdcf5"/><circle cx="429" cy="346" r="4" fill="#5bdcf5"/><circle cx="260" cy="45" r="4" fill="#ff6b35"/>
-        </svg>
-        <div class="hero-tag">ENGINEERED BY CURIOSITY / UNITED BY DRIVE</div>
-      </div>
-    </div>
-  </section>
-  <div class="ticker" aria-label="Team values"><div class="wrap ticker-track"><span>Build with purpose <i>✳</i> Think as one <i>✳</i> Test. Learn. Repeat. <i>✳</i> Drive beyond limits <i>✳</i></span></div></div>
-  <section id="about">
-    <div class="wrap">
-      <div class="section-head reveal"><div><div class="kicker">01 / Who we are</div><h2>Small team.<br>Big energy.</h2></div><p>SynApes brings together students from two CM Shri School campuses, united by curiosity, collaboration, and the challenge of competitive robotics.</p></div>
-      <div class="stat-grid">
-        <article class="stat-card reveal"><div class="stat-number">10</div><div class="stat-label">People, one team</div><div class="stat-detail">Different perspectives. Shared finish line.</div></article>
-        <article class="stat-card reveal"><div class="stat-number">02</div><div class="stat-label">School communities</div><div class="stat-detail">Dwarka Sector 5 + Dwarka Sector 22.</div></article>
-        <article class="stat-card reveal"><div class="stat-number">01</div><div class="stat-label">Common mission</div><div class="stat-detail">Show up, solve problems, and give it our all.</div></article>
-      </div>
-    </div>
-  </section>
-  <section id="hyperdrive">
-    <div class="wrap">
-      <div class="section-head reveal"><div><div class="kicker">02 / The challenge</div><h2>Welcome to<br>HyperDrive.</h2></div><p>NRL 2026 Delhi Regionals is the stage. HyperDrive is the game. Our focus is the engineering mindset behind every run: plan carefully, build thoughtfully, and improve through testing.</p></div>
-      <div class="feature-grid">
-        <article class="feature-main reveal"><div class="feature-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7"><path d="M13 2 4 14h7l-1 8 10-13h-7z"/></svg></div><h3>Precision meets pace.</h3><p>Competitive robotics rewards more than speed. It takes clear strategy, reliable mechanisms, careful control, and a team that can adapt when the plan meets reality.</p>
-          <svg class="track-art" viewBox="0 0 340 200" fill="none" aria-hidden="true"><path d="M-10 145C55 145 53 38 125 38h67c75 0 55 124 127 124h35" stroke="#243e57" stroke-width="36"/><path d="M-10 145C55 145 53 38 125 38h67c75 0 55 124 127 124h35" stroke="#ff6b35" stroke-width="2" stroke-dasharray="7 9"/><circle cx="125" cy="38" r="9" fill="#ff6b35"/><circle cx="319" cy="162" r="9" fill="#55d9f5"/></svg>
-        </article>
-        <div class="feature-stack">
-          <article class="feature-side reveal"><div class="feature-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7"><path d="M12 3v3m0 12v3M3 12h3m12 0h3M5.6 5.6l2.1 2.1m8.6 8.6 2.1 2.1m0-12.8-2.1 2.1m-8.6 8.6-2.1 2.1"/><circle cx="12" cy="12" r="5"/></svg></div><div><h3>Think, then build.</h3><p>Turn ideas into mechanisms with purpose, not guesswork.</p></div></article>
-          <article class="feature-side reveal"><div class="feature-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7"><path d="M4 19V5m0 14h16M7 15l4-4 3 2 5-6"/><path d="M15 7h4v4"/></svg></div><div><h3>Test. Learn. Repeat.</h3><p>Use every trial to find the next improvement and make it count.</p></div></article>
-          <article class="feature-side reveal"><div class="feature-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7"><circle cx="9" cy="8" r="3"/><circle cx="17" cy="9" r="2.5"/><path d="M3 20v-2a6 6 0 0 1 12 0v2m1-5a4 4 0 0 1 5 4v1"/></svg></div><div><h3>Win as a team.</h3><p>Communication and trust are part of the build, too.</p></div></article>
-        </div>
-      </div>
-    </div>
-  </section>
-  <section class="schools" id="schools">
-    <div class="wrap">
-      <div class="section-head reveal"><div><div class="kicker">03 / Our roots</div><h2>Two campuses.<br>One crew.</h2></div><p>SynApes represents two CM Shri School communities in Dwarka, Delhi. Different classrooms, one shared team identity.</p></div>
-      <div class="school-grid">
-        <article class="school-card reveal"><div class="school-count">08</div><div><h3>CM Shri School</h3><p>Dwarka, Sector 5 · 8 team members</p></div></article>
-        <article class="school-card reveal"><div class="school-count">02</div><div><h3>CM Shri School</h3><p>Dwarka, Sector 22 · 2 team members</p></div></article>
-      </div>
-      <p class="school-note reveal">Proudly representing both school communities at NRL 2026 Delhi Regionals.</p>
-    </div>
-  </section>
-  <section class="manifesto">
-    <div class="wrap"><div class="manifesto-box reveal"><div><div class="kicker">The SynApes mindset</div><h2>Curiosity in our heads.<br>Grit in our gears.</h2><p>We’re here to learn by doing, solve problems together, and make every iteration smarter than the last. This is our drive. This is SynApes.</p></div><div class="manifesto-mark" aria-hidden="true">SA<br>26</div></div></div>
-  </section>
-</main>
-<footer><div class="wrap footer-row"><a class="footer-brand" href="#home"><span class="brand-mark"><svg viewBox="0 0 32 32" fill="none" aria-hidden="true"><path d="M5 5h22L19 13h8L9 28l4-10H7l7-7H5z" fill="#111723"/></svg></span><span>Syn<em style="color:var(--orange);font-style:normal">Apes</em></span></a><div class="footer-note">NRL 2026 · Delhi Regionals · HyperDrive</div><div class="footer-links"><a href="#about">The team</a><a href="#hyperdrive">The challenge</a><a href="https://github.com/avada-kedavra62442/Synapes" target="_blank" rel="noreferrer">GitHub ↗</a></div></div></footer>
-<script>
-  const menuBtn=document.getElementById('menuBtn');
-  const navlinks=document.getElementById('navlinks');
-  menuBtn.addEventListener('click',()=>{const open=navlinks.classList.toggle('open');menuBtn.setAttribute('aria-expanded',String(open));menuBtn.textContent=open?'✕':'☰';});
-  navlinks.querySelectorAll('a').forEach(a=>a.addEventListener('click',()=>{navlinks.classList.remove('open');menuBtn.setAttribute('aria-expanded','false');menuBtn.textContent='☰';}));
-  const observer=new IntersectionObserver(entries=>entries.forEach(entry=>{if(entry.isIntersecting){entry.target.classList.add('visible');observer.unobserve(entry.target);}}),{threshold:.12});
-  document.querySelectorAll('.reveal').forEach(el=>observer.observe(el));
-</script>
-</body>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="theme-color" content="#090d14" />
+    <meta name="description" content="SynApes — a ten-student robotics team from CM Shri Schools, Dwarka, taking on NRL 2026 Delhi Regionals in HyperDrive." />
+    <meta property="og:title" content="SynApes — Built to Think. Ready to Drive." />
+    <meta property="og:description" content="Ten minds. One machine. One mission. Meet SynApes, competing in NRL 2026 HyperDrive." />
+    <meta property="og:type" content="website" />
+    <link rel="icon" type="image/svg+xml" href="/synapes-mark.svg" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@500;600;700;800;900&family=DM+Sans:wght@400;500;600;700&family=Space+Mono:wght@400;700&display=swap" rel="stylesheet" />
+    <title>SynApes — NRL 2026 | HyperDrive</title>
+  </head>
+  <body>
+    <div id="root"></div>
+    <script type="module" src="/src/main.jsx"></script>
+  </body>
 </html>
