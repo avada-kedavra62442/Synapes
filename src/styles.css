@@ -573,6 +573,9 @@ html{scroll-padding-top:108px}
   border:0;
   background:#080e15;
 }
+.hd-field-map-wrap{padding:clamp(8px,1.6vw,18px);background:radial-gradient(ellipse at 50% 45%,rgba(32,92,145,.18),transparent 68%),#080e15}
+.hd-field-map{display:block;width:100%;height:auto;max-height:760px}
+
 .hd-official-field-note{
   margin:14px 2px 0;
   color:#8fa5b6;
