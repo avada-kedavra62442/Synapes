@@ -1,4 +1,4 @@
-import { ArrowUpRight, Heart, MapPin, MoveUpRight, Sparkles, Github, Instagram } from "lucide-react";
+import { ArrowUpRight, Heart, MapPin, MoveUpRight, Sparkles } from "lucide-react";
 
 const footerLinks = [
   { label: "MEET THE TEAM", href: "#members" },
@@ -7,9 +7,27 @@ const footerLinks = [
   { label: "OUR STORY", href: "#story" },
 ];
 
+function GitHubMark({ size = 16 }) {
+  return (
+    <svg width={size} height={size} viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+      <path d="M12 .9a11.1 11.1 0 0 0-3.51 21.63c.56.1.76-.24.76-.54v-2.1c-3.1.67-3.76-1.32-3.76-1.32-.5-1.28-1.24-1.62-1.24-1.62-1.01-.69.08-.68.08-.68 1.12.08 1.71 1.15 1.71 1.15.99 1.7 2.6 1.21 3.23.92.1-.72.39-1.21.7-1.49-2.48-.28-5.09-1.24-5.09-5.52 0-1.22.44-2.22 1.15-3-.12-.28-.5-1.42.11-2.96 0 0 .94-.3 3.06 1.15a10.6 10.6 0 0 1 5.57 0c2.12-1.45 3.05-1.15 3.05-1.15.61 1.54.23 2.68.12 2.96.72.78 1.15 1.78 1.15 3.01 0 4.29-2.62 5.23-5.11 5.51.4.35.75 1.03.75 2.08v3.06c0 .3.2.65.77.54A11.1 11.1 0 0 0 12 .9Z" />
+    </svg>
+  );
+}
+
+function InstagramMark({ size = 16 }) {
+  return (
+    <svg width={size} height={size} viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.8" strokeLinecap="round" strokeLinejoin="round" aria-hidden="true">
+      <rect x="3" y="3" width="18" height="18" rx="5" />
+      <circle cx="12" cy="12" r="4" />
+      <circle cx="17.5" cy="6.5" r=".8" fill="currentColor" stroke="none" />
+    </svg>
+  );
+}
+
 const socialLinks = [
-  { label: "GitHub", href: "https://github.com/SynapseNRL", Icon: Github },
-  { label: "Instagram", href: "https://www.instagram.com/synapse_creators/", Icon: Instagram },
+  { label: "GitHub", href: "https://github.com/SynapseNRL", Icon: GitHubMark },
+  { label: "Instagram", href: "https://www.instagram.com/synapse_creators/", Icon: InstagramMark },
 ];
 
 export default function Footer() {
@@ -54,7 +72,7 @@ export default function Footer() {
                   transition: "border-color .2s, background .2s, transform .2s",
                 }}
               >
-                <Icon size={16} strokeWidth={1.8} />
+                <Icon size={16} />
                 <span>{label}</span>
                 <ArrowUpRight size={12} />
               </a>
