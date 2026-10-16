@@ -48,14 +48,60 @@ function HyperdriveArena() {
         </div>
         <span className="hd-field-size">12 FT × 12 FT</span>
       </div>
-      <div className="hd-official-field-frame">
-        <iframe
-          src="https://drive.google.com/file/d/1Huwjv3W1Nv4YadcgpQLIuMZ6EhevKLcF/preview#page=9&zoom=page-fit"
-          title="Official NRL 2026 HYPERDRIVE field diagram from the game manual"
-          loading="lazy"
-          allow="autoplay"
-          referrerPolicy="strict-origin-when-cross-origin"
-        />
+      <div className="hd-official-field-frame hd-field-map-wrap">
+        <svg className="hd-field-map" viewBox="0 0 1000 690" role="img" aria-labelledby="hd-map-title hd-map-desc">
+          <title id="hd-map-title">HYPERDRIVE 12 by 12 foot field map</title>
+          <desc id="hd-map-desc">Top-down field layout showing red and blue squad zones, high poles, star poles, apex poles, vaults, drop zones, source zones, and space stations.</desc>
+          <defs>
+            <linearGradient id="hd-field-floor" x1="0" y1="0" x2="1" y2="1"><stop offset="0%" stopColor="#101f35"/><stop offset="100%" stopColor="#08111f"/></linearGradient>
+            <pattern id="hd-field-grid" width="40" height="40" patternUnits="userSpaceOnUse"><path d="M 40 0 L 0 0 0 40" fill="none" stroke="#7894b5" strokeOpacity=".12" strokeWidth="1"/></pattern>
+            <filter id="hd-map-glow"><feGaussianBlur stdDeviation="4" result="blur"/><feMerge><feMergeNode in="blur"/><feMergeNode in="SourceGraphic"/></feMerge></filter>
+          </defs>
+          <rect x="96" y="46" width="808" height="598" rx="18" fill="#020711" stroke="#7894b5" strokeOpacity=".7" strokeWidth="3"/>
+          <rect x="111" y="61" width="778" height="568" rx="8" fill="url(#hd-field-floor)" stroke="#d6e5f7" strokeOpacity=".42" strokeWidth="2"/>
+          <rect x="111" y="61" width="778" height="568" fill="url(#hd-field-grid)"/>
+          <path d="M500 61V629" stroke="#b5c8df" strokeOpacity=".22" strokeDasharray="7 9"/>
+          <rect x="111" y="61" width="778" height="284" fill="#e94b63" fillOpacity=".055"/>
+          <rect x="111" y="345" width="778" height="284" fill="#2d9dff" fillOpacity=".055"/>
+          <g fontFamily="Inter, Arial, sans-serif" fontWeight="800" fontSize="16" letterSpacing="2">
+            <text x="135" y="88" fill="#ff7182">RED SQUAD</text><text x="865" y="610" textAnchor="end" fill="#65b8ff">BLUE SQUAD</text>
+          </g>
+          <g strokeWidth="2">
+            <rect x="128" y="103" width="150" height="76" rx="8" fill="#e94b63" fillOpacity=".15" stroke="#f05d70" strokeOpacity=".8"/>
+            <text x="203" y="135" fill="#ffd6dc" fontSize="13" textAnchor="middle" fontWeight="700">RED SOURCE</text><text x="203" y="154" fill="#ffd6dc" fontSize="11" textAnchor="middle">ZONE</text>
+            <rect x="722" y="511" width="150" height="76" rx="8" fill="#2d9dff" fillOpacity=".15" stroke="#429fff" strokeOpacity=".8"/>
+            <text x="797" y="543" fill="#d5ebff" fontSize="13" textAnchor="middle" fontWeight="700">BLUE SOURCE</text><text x="797" y="562" fill="#d5ebff" fontSize="11" textAnchor="middle">ZONE</text>
+            <rect x="128" y="511" width="150" height="76" rx="8" fill="#e94b63" fillOpacity=".1" stroke="#f05d70" strokeDasharray="5 4"/>
+            <text x="203" y="544" fill="#ffd6dc" fontSize="12" textAnchor="middle" fontWeight="700">RED DROP</text><text x="203" y="562" fill="#ffd6dc" fontSize="11" textAnchor="middle">ZONE</text>
+            <rect x="722" y="103" width="150" height="76" rx="8" fill="#2d9dff" fillOpacity=".1" stroke="#429fff" strokeDasharray="5 4"/>
+            <text x="797" y="136" fill="#d5ebff" fontSize="12" textAnchor="middle" fontWeight="700">BLUE DROP</text><text x="797" y="154" fill="#d5ebff" fontSize="11" textAnchor="middle">ZONE</text>
+          </g>
+          <g fill="#f5b84b" stroke="#ffe4a3" strokeWidth="2" filter="url(#hd-map-glow)">
+            <circle cx="355" cy="170" r="12"/><circle cx="645" cy="170" r="12"/><circle cx="355" cy="520" r="12"/><circle cx="645" cy="520" r="12"/>
+          </g>
+          <g fill="#e9f2ff" stroke="#8bb5e8" strokeWidth="2">
+            <circle cx="390" cy="255" r="10"/><circle cx="500" cy="255" r="10"/><circle cx="610" cy="255" r="10"/>
+            <circle cx="390" cy="435" r="10"/><circle cx="500" cy="435" r="10"/><circle cx="610" cy="435" r="10"/>
+          </g>
+          <g fill="#8b7cff" stroke="#c5beff" strokeWidth="2">
+            <circle cx="445" cy="305" r="13"/><circle cx="555" cy="305" r="13"/><circle cx="445" cy="385" r="13"/><circle cx="555" cy="385" r="13"/>
+          </g>
+          <g fill="none" strokeWidth="4">
+            <rect x="295" y="194" width="72" height="40" rx="8" stroke="#f05d70" fill="#e94b63" fillOpacity=".18"/>
+            <rect x="633" y="456" width="72" height="40" rx="8" stroke="#429fff" fill="#2d9dff" fillOpacity=".18"/>
+          </g>
+          <g fill="#fff" fontFamily="Inter, Arial, sans-serif" fontSize="11" fontWeight="700" textAnchor="middle">
+            <text x="331" y="218">RED VAULT</text><text x="669" y="480">BLUE VAULT</text>
+            <text x="500" y="120" fontSize="13" letterSpacing="1.5">HIGH POLES × 3</text><text x="500" y="582" fontSize="13" letterSpacing="1.5">HIGH POLES × 3</text>
+            <text x="500" y="288" fontSize="10" fill="#d7d0ff">STAR POLES</text><text x="500" y="410" fontSize="10" fill="#d7d0ff">STAR POLES</text>
+          </g>
+          <g stroke="#9cb5d4" strokeWidth="2" fill="#132a45"><rect x="454" y="72" width="92" height="30" rx="6"/><rect x="454" y="588" width="92" height="30" rx="6"/></g>
+          <g fill="#eaf4ff" fontFamily="Inter, Arial, sans-serif" fontSize="11" fontWeight="800" textAnchor="middle"><text x="500" y="91">SPACE STATION</text><text x="500" y="607">SPACE STATION</text></g>
+          <g fontFamily="Inter, Arial, sans-serif" fontSize="12" fill="#c6d7eb">
+            <text x="500" y="25" textAnchor="middle" fontSize="13" fontWeight="800" letterSpacing="2">FIELD BOUNDARY · 12 FT × 12 FT</text>
+            <text x="500" y="674" textAnchor="middle" fontSize="11" fill="#90a8c5">SCHEMATIC TOP-DOWN FIELD MAP · NOT TO SCALE</text>
+          </g>
+        </svg>
       </div>
       <div className="hd-arena-legend">
         <span><i className="legend-dot legend-red" /> RED SQUAD</span>
@@ -64,7 +110,7 @@ function HyperdriveArena() {
         <span className="hd-field-count">OFFICIAL FIELD · 6 HIGH POLES · 4 STAR POLES · 4 APEX POLES · 2 SPACE STATIONS · 2 VAULTS</span>
       </div>
       <p className="hd-official-field-note">
-        Official field diagram (Fig. 3.1) from the NRL 2026 HYPERDRIVE Game Manual. This replaces the old illustrative map; the field layout is shown from NRL’s source document, not recreated.
+        Top-down field map showing the main HYPERDRIVE zones and scoring elements. Use the official manual below for exact dimensions and setup details.
       </p>
     </div>
   );
