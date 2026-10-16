@@ -12,9 +12,9 @@ export default function Navigation() {
 
   return (
     <header className="site-nav">
-      <a className="brand" href="#top" aria-label="SynApes home">
-        <span className="brand-mark"><span>S</span><i /></span>
-        <span className="brand-word">SYN<span>APES</span></span>
+      <a className="brand" href="#top" aria-label="Synapse home">
+        <img className="brand-logo" src="/synapse-logo.svg" alt="" />
+        <span className="brand-word">SYNAPSE</span>
       </a>
       <nav className={open ? "nav-links nav-links-open" : "nav-links"} aria-label="Main navigation">
         {links.map((link) => (
