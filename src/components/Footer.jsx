@@ -12,15 +12,15 @@ export default function Footer() {
     <footer className="site-footer">
       <div className="footer-main section-wrap">
         <div className="footer-feature">
-          <a className="brand footer-brand" href="#top" aria-label="SynApes home">
-            <span className="brand-mark"><span>S</span><i /></span>
-            <span className="brand-word">SYN<span>APES</span></span>
+          <a className="brand footer-brand" href="#top" aria-label="Synapse home">
+            <img className="brand-logo footer-logo" src="/synapse-logo.svg" alt="" />
+            <span className="brand-word">SYNAPSE</span>
           </a>
           <p className="footer-tagline">Ten students. Two schools.<br /><strong>One team learning by building.</strong></p>
           <span className="footer-event"><MapPin size={14} /> DWARKA, NEW DELHI <i /> NRL 2026</span>
         </div>
         <div className="footer-column">
-          <span className="footer-heading">EXPLORE SYNAPES</span>
+          <span className="footer-heading">EXPLORE SYNAPSE</span>
           {footerLinks.map((link) => <a key={link.href} href={link.href}>{link.label}<ArrowUpRight size={13} /></a>)}
         </div>
         <div className="footer-callout">
@@ -30,7 +30,7 @@ export default function Footer() {
         </div>
       </div>
       <div className="footer-bottom section-wrap">
-        <span>© 2026 SYNAPES · STUDENT ROBOTICS TEAM</span>
+        <span>© 2026 SYNAPSE · STUDENT ROBOTICS TEAM</span>
         <span>NRL 2026 <i>·</i> DELHI REGIONALS</span>
         <span>THINK · BUILD · TEST · LEARN <Heart size={12} fill="currentColor" /></span>
       </div>
