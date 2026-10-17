@@ -46,7 +46,7 @@ export const hyperdriveFocus = [
 ];
 
 export const teamIdentity = {
-  name: "SynApes",
+  name: "Synapse",
   competition: "NRL 2026",
   event: "Delhi Regionals",
   challenge: "HyperDrive",
