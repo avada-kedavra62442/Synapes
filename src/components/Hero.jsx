@@ -17,7 +17,7 @@ export default function Hero() {
           Ten students from two CM Shri Schools in Dwarka, preparing for <strong>NRL 2026 HYPERDRIVE</strong>. We’re learning across mechanics, electronics and code—while building, documenting, testing and adapting as one team.
         </motion.p>
         <motion.div className="hero-actions" initial={{ opacity: 0, y: 14 }} animate={{ opacity: 1, y: 0 }} transition={{ duration: .5, delay: .28 }}>
-          <a className="button button-primary" href="#team">MEET THE TEAM <ArrowDown size={16} /></a>
+          <a className="button button-primary" href="#members">MEET THE TEAM <ArrowDown size={16} /></a>
           <a className="button button-quiet" href="#hyperdrive">THE CHALLENGE <ArrowUpRight size={16} /></a>
         </motion.div>
         <div className="hero-micro">
@@ -26,7 +26,7 @@ export default function Hero() {
         </div>
       </div>
       <motion.div className="hero-visual" initial={{ opacity: 0, scale: .94, x: 18 }} animate={{ opacity: 1, scale: 1, x: 0 }} transition={{ duration: .8, delay: .15 }}>
-        <div className="visual-topline"><span>SYNAPES / ROBOTICS TEAM</span><span>SN-26 / HD</span></div>
+        <div className="visual-topline"><span>SYNAPSE / ROBOTICS TEAM</span><span>SN-26 / HD</span></div>
         <div className="visual-orbit orbit-one" /><div className="visual-orbit orbit-two" />
         <div className="visual-cross cross-a" /><div className="visual-cross cross-b" />
         <RobotIllustration />
