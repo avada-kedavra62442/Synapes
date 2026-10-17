@@ -8,10 +8,10 @@ export default function TeamMembersSection() {
     <section className="members-section section-wrap" id="members">
       <div className="section-heading members-heading">
         <div>
-          <SectionLabel number="02">THE PEOPLE BEHIND SYNAPES</SectionLabel>
+          <SectionLabel number="02">THE PEOPLE BEHIND SYNAPSE</SectionLabel>
           <h2>MEET THE<br /><span>TEAM.</span></h2>
         </div>
-        <p>Meet the 10 students behind SynApes. Each profile includes a name, class, school, photo and short introduction, so the people behind the engineering have a place on the team page.</p>
+        <p>Meet the ten people behind Synapse. Explore the students, schools and different perspectives powering our NRL 2026 HyperDrive journey.</p>
       </div>
       <div className="members-grid">
         {teamMembers.map((member, index) => (
