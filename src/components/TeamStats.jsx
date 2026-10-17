@@ -3,7 +3,7 @@ import { teamStats } from "../data/teamContent.js";
 
 export default function TeamStats() {
   return (
-    <section className="stats-band" aria-label="SynApes at a glance">
+    <section className="stats-band" aria-label="Synapse at a glance">
       {teamStats.map((item, index) => (
         <motion.div
           className="stat-item"
