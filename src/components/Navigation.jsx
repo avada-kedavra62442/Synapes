@@ -2,7 +2,7 @@ import { useState } from "react";
 import { ArrowDownRight, Menu, X } from "lucide-react";
 
 const links = [
-  { label: "THE TEAM", href: "#members" },
+  { label: "TEAM MEMBERS", href: "#members" },
   { label: "HYPERDRIVE", href: "#hyperdrive" },
   { label: "OUR STORY", href: "#story" },
 ];
